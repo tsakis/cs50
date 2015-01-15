@@ -36,12 +36,12 @@ float input_dollars() {
     } while (in < 0);
     return in;
 }
+
 int number_of_coins(int * coins_array, size_t array_size, int amount) {
 	int residue = amount;
-	int i = 0;
 	int count = 0;
 	
-	for (i = 0; (i < array_size) && (residue > 0); i++) {
+	for (int i = 0; (i < array_size) && (residue > 0); i++) {
 		count += residue / coins_array[i];
 		residue = residue % coins_array[i];
 	}
@@ -74,10 +74,10 @@ int calculate_dollars(float dollar_input) {
 }
 
 int main(void) {
-	float in;
+    float in;
 	
-	// in = input_euros();
-	// calculate_euros(in);
+    // in = input_euros();
+    // calculate_euros(in);
     in = input_dollars();
     calculate_dollars(in);
     return 0;
