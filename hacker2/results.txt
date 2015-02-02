@@ -1,0 +1,11 @@
+// Dictionary
+50yoN9fp966dU:crimson
+HA610l/.LeOak:crimson
+50AcIG/VnV3D2:bacon
+50q/EEJnOmtxc:puzzles
+
+// Brute force  - checked up to all 4-letter words
+50zPJlUFIYY0o:13
+50NwUtF.OmQNY:1337
+50lMLvy/mlPIE:l33t
+50WZ/Wy2GdA1Y:n00b
