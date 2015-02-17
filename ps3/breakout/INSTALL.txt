@@ -1,0 +1,14 @@
+Almost 2h just to run breakout on Ubuntu x64 (14.04) - such fun!
+
+- SPL code downloaded from
+https://github.com/cs50/spl
+
+- make worked
+- make install, I copied manually libcs.a and spl.jar to /usr/local/lib
+
+- When trying to run breakout I had the following error:
+Error: Could not find or load main class stanford.spl.JavaBackEnd
+  
+- Turns out it is a classpath problem (I guess!), since I copied spl.jar inside the breakout folder and it worked! ....
+
+(Beware there may be steps that I forgot to write down)
