@@ -1,0 +1,20 @@
+Diff compared to ps3:
+Implement sort O(n) as compared to O(n^2)
+
+Go ahead and implement sort so that the function actually sorts, from smallest to largest, the array of numbers that it’s passed, in such a way that its running time is in O(n), where n is the array’s size. Yes, this running time is possible because you may assume that each of the array’s numbers wil be non-negative and less than LIMIT, a constant defined in generate.c. Leverage that assumption! However, realize that the array might contain duplicates.
+
+Now, technically, because we’ve bounded with a constant the amount of hay that find will accept (and because the value of sort's second parameter is bounded by an int's finitely many bits), the running time of sort, however implemented, is arguably O(1). Even so, for the sake of this asymptotic challenge, think of the size of sort's input as n.
+
+
+========= Extern variables
+Declare it at helpers.h
+extern int limit;
+
+Define it at helpers.c
+int limit = ...;
+
+Then, in every other file you want to use it, you have to 
+extern int limit;
+
+WATCH OUT! Most common problem is to forget to compile helpers.c along with the other executable, resulting in compilation error. See Makefile for details and where helpers.c is used!
+
